@@ -35,6 +35,10 @@ document.querySelector('.check').addEventListener('click', function(){   // doda
 
     else if(guess === secretNumber){ // proverka dali brojot od input poleto e ednakov na random brojot
         document.querySelector('.message').textContent = '🎉 Correct Number!'; // alert so poraka koga brojot e tocno pogodok
+
+        document.querySelector('body').style.backgroundColor = "green"; // promena na pozadinskata boja na body na zelena
+
+        document.querySelector('.number').style.width = '30rem'; // promena na sirinata na elementot so klasata number
     }
 
     else if(guess > secretNumber){
